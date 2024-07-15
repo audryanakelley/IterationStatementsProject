@@ -29,7 +29,7 @@ namespace IterationStatements
                 Console.WriteLine(otherNumber);
                 otherNumber++;
                 numbers.Add(num);
-            } while (otherNumber <= 12);
+            } while (num <= 100);
             
 
             {
@@ -46,7 +46,7 @@ namespace IterationStatements
             while(num < 200)
             {
                 num++;
-                numbers.Add(otherNumber);
+                numbers.Add(num);
             }
             
             // Create a while loop
@@ -65,6 +65,7 @@ namespace IterationStatements
 
             // Create a foreach loop using the collection - numbers
                 //In the scope of the foreach loop, print each number in numbers
+               
                 Console.WriteLine("Foreach Loop");
                 foreach (int number in numbers)
                 {
@@ -84,7 +85,7 @@ namespace IterationStatements
                 // Decrement i by 1
 
             //start for loop here
-            for (int i = numbers.Count -1; i >= 0; i--)
+            for (int i = 199; i <= numbers.Count && i>= 0; i--) 
             {
                 Console.WriteLine(numbers [i]);
             }
